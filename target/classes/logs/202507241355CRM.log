@@ -1,4 +1,0 @@
-2025-07-24-13:55:28 INFO  BaseTest: setDriver: spark report configured
-2025-07-24-13:55:29 INFO  BaseTest: getBrowserType: chrome configured
-2025-07-24-13:55:29 INFO  BaseTest: setup: loginTest1 Object is created
-2025-07-24-13:55:29 INFO  BaseTest: setup: createuserTC1 Object is created
