@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-22T09:26:36 PDT" name="Default suite" finished-at="2025-07-22T09:26:36 PDT" duration-ms="156">
+    <groups>
+    </groups>
+    <test started-at="2025-07-22T09:26:36 PDT" name="Default test" finished-at="2025-07-22T09:26:36 PDT" duration-ms="156">
+      <class name="testScipts.LoginTest">
+        <test-method is-config="true" signature="setDriver(java.lang.String,boolean)[pri:0, instance:testScipts.LoginTest@45312be2]" started-at="2025-07-22T09:26:36 PDT" name="setDriver" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1753201596218" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testScipts.LoginTest@45312be2]" started-at="2025-07-22T09:26:36 PDT" name="setup" finished-at="2025-07-22T09:26:36 PDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest2()[pri:0, instance:testScipts.LoginTest@45312be2]" started-at="2025-07-22T09:26:36 PDT" name="loginTest2" finished-at="2025-07-22T09:26:36 PDT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeTest on method setDriver but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:testScipts.LoginTest@45312be2]" started-at="2025-07-22T09:26:36 PDT" name="tearDown" finished-at="2025-07-22T09:26:36 PDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="removeDriver()[pri:0, instance:testScipts.LoginTest@45312be2]" started-at="2025-07-22T09:26:36 PDT" name="removeDriver" finished-at="2025-07-22T09:26:36 PDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDriver -->
+      </class> <!-- testScipts.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

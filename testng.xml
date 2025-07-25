@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNgSuite" parallel="methods" thread-count="4">
+	
+	<test name="Chrome browser test">
+		<parameter name="browserName" value="chrome"></parameter>
+	<parameter name="isHeadless" value="false"></parameter>
+		<classes>
+			<class name="testScipts.LoginTest"></class>
+			<class name="testScipts.CreateUserTest"></class>
+			
+		</classes>
+	</test>
+</suite>
