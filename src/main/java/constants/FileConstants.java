@@ -1,6 +1,8 @@
 package constants;
 
 
+import java.nio.file.Paths;
+
 import utils.UtilCommon;
 
 public class FileConstants {
@@ -9,6 +11,7 @@ public class FileConstants {
 	public static final String REPORT_PATH =  System.getProperty("user.dir") + "/src/main/resources/reports/"+UtilCommon.getDateAndTimeStamp()+"_CRM.html";
 //	public static final String SCREENSHOT_PATH =  System.getProperty("user.dir") + "/src/main/resources/screenshots/"+UtilCommon.getDateAndTimeStamp()+"_CRM.PNG";
 	
-	public static final String SCREENSHOT_PATH =  System.getProperty("user.dir") + "/src/main/resources/reports/screen";
+	public static final String SCREENSHOT_PATH =  System.getProperty("user.dir") + "\\src\\main\\resources\\reports\\screen";
+	
 	
 }
