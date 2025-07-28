@@ -16,75 +16,86 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+
 import constants.FileConstants;
 
 
 public class BaseTest {
 	
-	private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+    private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+    protected static ThreadLocal<ExtentTest> threadExtentTest = new ThreadLocal<>();
 
-	public static ThreadLocal<ExtentTest> threadExtentTest = new ThreadLocal<>();
+    public static ExtentReports extent;
+    private static ExtentSparkReporter spark;
+    protected static final Logger logger = LogManager.getLogger("BASETEST");
+    
 
-		static ExtentReports extent = new ExtentReports();
-		static ExtentSparkReporter spark = null;
-		public static ExtentTest test = null;
-	public static Logger logger =LogManager.getLogger("BASETEST");
-	
-	
-	 
-	
-     public static void setup(Method name) {
-   	BaseTest.test = extent.createTest(name.getName());
-   	logger.info("BaseTest: setup: "+name.getName()+" Object is created");
+    public static ExtentTest getTest() {
+        return threadExtentTest.get();
+    }
+    
+    @Parameters({"browserName", "isHeadless"})
+    @BeforeMethod
+    public void setUpDriverAndTest(Method method, String browserName, boolean isHeadless) {
+        
+
+        WebDriver driver = getBrowserType(browserName, isHeadless);
+        threadLocalDriver.set(driver);
+        logger.info("Driver set for test: " + method.getName());
+
+        ExtentTest test = extent.createTest(method.getName());
+        extent.attachReporter();
+        threadExtentTest.set(test);
+        logger.info("ExtentTest created for: " + method.getName());
     }
 
-   @AfterMethod
-		
-    public void tearDown(Method name) {
-   	logger.info("BaseTest: teardown: "+name.getName()+" tearDown is called");
+    @AfterMethod
+    public void tearDownDriver() {
+        WebDriver driver = getDriver();
+        if (driver != null) {
+            driver.quit();
+            logger.info("Driver quit");
+        }
+        threadLocalDriver.remove();
+        threadExtentTest.remove();
+    }
+    
+    @BeforeSuite
+    
+    public static void setup() {
+	
+    	if (extent == null) {
+            spark = new ExtentSparkReporter(new File(FileConstants.REPORT_PATH));
+            extent = new ExtentReports();
+            extent.attachReporter(spark);
+        }
+		logger.debug("BaseTest : setup : initializing report manager..");
     }
 
-      
-@Parameters({"browserName", "isHeadless"})       
-@BeforeMethod
+    @AfterSuite
+    public void flushReport() {
+        if (extent != null) {
+            extent.flush();
+            logger.info("Extent Report flushed.");
+        }
+    }
 
-public static void setDriver(String browserName, boolean isHeadless) {
-spark = new ExtentSparkReporter(new File(FileConstants.REPORT_PATH));
-extent.attachReporter(spark);
-logger.info("BaseTest: setDriver: spark report configured");
-WebDriver driver = BaseTest.getBrowserType(browserName, isHeadless);
-threadLocalDriver.set(driver);
-}
+    public static WebDriver getDriver() {
+        return threadLocalDriver.get();
+    }
 
    
- 
 
 
-public static WebDriver getDriver() {
-return threadLocalDriver.get();
-}
-
-
-@AfterMethod
-
-
-	public static void removeDriver() {
-		getDriver().close();
-	
-//	getDriver().quit();
-threadLocalDriver.remove();
-logger.info("BaseTest: removeDriver: remove driver");
-extent.flush();
-}
 	
 public static WebDriver getBrowserType(String browserName, boolean headless) {
 		

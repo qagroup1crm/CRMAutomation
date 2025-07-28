@@ -21,21 +21,13 @@ public class LoginTest extends BaseTest{
 	
 	Login lp = new Login(driver);
 	lp.loginToApp(driver);
-	BaseTest.test.info("Login Successfull");
+	BaseTest.getTest().info("Login Successfull");
 	logger.info("LoginTests: loginTest1: Home Page Displayed");
 	Assert.assertEquals(lp.homepageisDisplayed(driver), true);
 //	BaseTest.test.addScreenCaptureFromPath(UtilCommon.getScreenshots(driver));
 	}
 	
-//	@Test
-	public void loginTest2() throws InvalidFormatException, IOException {
-		WebDriver driver = BaseTest.getDriver();
-		driver.get("https://www.google.com/");
-		logger.info("LoginTests: loginTest2: google Page Displayed");
-		BaseTest.test.info("Google Page Opened");
-		BaseTest.test.addScreenCaptureFromPath(UtilCommon.getScreenshots(driver));
-		
-	}
+
 	
 	
 	

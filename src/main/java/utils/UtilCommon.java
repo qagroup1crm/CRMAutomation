@@ -72,7 +72,7 @@ public class UtilCommon {
 	public static String getScreenshots(WebDriver driver) throws IOException {
 		
 		/*
-		 * TakesScreenshot screen = (TakesScreenshot) driver;
+		 TakesScreenshot screen = (TakesScreenshot) driver;
 		String path = FileConstants.SCREENSHOT_PATH;
 		File src = screen.getScreenshotAs(OutputType.FILE);
 		File dst = new File(path);
@@ -80,19 +80,23 @@ public class UtilCommon {
 		return path;
 		
 		*/
-		
+	
+	
 		
 		TakesScreenshot screen = (TakesScreenshot) driver;
 	    File src = screen.getScreenshotAs(OutputType.FILE);
 
 	    String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 	    String screenshotName = "CRM_" + timestamp + ".png";
-	    String path = FileConstants.SCREENSHOT_PATH + File.separator + screenshotName;
+	    String path = FileConstants.SCREENSHOT_PATH + File.separator+screenshotName;
+	    
+	    
 
 	    File dst = new File(path);
 	    FileUtils.copyFile(src, dst);
 
 	    return path;
+		
 		
 			
 	}

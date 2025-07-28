@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utils.RandomDataGenerator;
+import randomDataGenerator.CreateUser;
 
 
 
@@ -54,21 +54,25 @@ public class CreateUserPage extends Base{
 	@FindBy(xpath = "//button[text()='Create User']")
 	public WebElement save;
 	
+	@FindBy(xpath = "//div[contains(@class, 'error-message') and contains(text(), 'valid email')]")
+	public WebElement emailerrormessage;
 	
 	
-	public void createuser(String fullname, String mobileno, String emailid,String usrname, String passwrd) throws IOException {
+	
+	public void createuser() throws IOException {
 		
-		 userfullname.click();
-	       userfullname.sendKeys();
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
 	       mobile.click();
-	       mobile.sendKeys(mobileno);
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
 	       email.click();
-	       email.sendKeys(emailid);
+	       email.sendKeys(randomDataGenerator.CreateUser.getEmail());
 	       username.click();
-	       username.sendKeys(usrname);
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
 	       password.click();
-	       password.sendKeys(passwrd);
+	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
 	       save.click();
+	       	       
 		}
 		    
 
