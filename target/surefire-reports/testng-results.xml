@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-28T09:20:44 PDT" name="TestNgSuite" finished-at="2025-07-28T09:20:56 PDT" duration-ms="11846">
+  <suite started-at="2025-07-28T16:16:19 PDT" name="TestNgSuite" finished-at="2025-07-28T16:17:33 PDT" duration-ms="73896">
     <groups>
     </groups>
-    <test started-at="2025-07-28T09:20:44 PDT" name="Chrome browser test" finished-at="2025-07-28T09:20:56 PDT" duration-ms="11846">
+    <test started-at="2025-07-28T16:16:19 PDT" name="Chrome browser test" finished-at="2025-07-28T16:17:33 PDT" duration-ms="73896">
       <class name="testScipts.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScipts.LoginTest@50fe837a]" started-at="2025-07-28T09:20:44 PDT" name="setup" finished-at="2025-07-28T09:20:44 PDT" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScipts.LoginTest@f0e995e]" started-at="2025-07-28T16:16:19 PDT" name="setup" finished-at="2025-07-28T16:16:19 PDT" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.LoginTest@50fe837a]" started-at="2025-07-28T09:20:44 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T09:20:47 PDT" duration-ms="2970" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testScipts.LoginTest.loginTest1() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriverAndTest -->
-        <test-method signature="loginTest1()[pri:0, instance:testScipts.LoginTest@50fe837a]" started-at="2025-07-28T09:20:47 PDT" name="loginTest1" finished-at="2025-07-28T09:20:53 PDT" duration-ms="5111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest1 -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.LoginTest@50fe837a]" started-at="2025-07-28T09:20:53 PDT" name="tearDownDriver" finished-at="2025-07-28T09:20:54 PDT" duration-ms="451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownDriver -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:testScipts.LoginTest@50fe837a]" started-at="2025-07-28T09:20:57 PDT" name="flushReport" finished-at="2025-07-28T09:20:57 PDT" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testScipts.LoginTest@f0e995e]" started-at="2025-07-28T16:17:34 PDT" name="flushReport" finished-at="2025-07-28T16:17:34 PDT" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- testScipts.LoginTest -->
       <class name="testScipts.CreateUserTest">
-        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-28T09:20:44 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T09:20:47 PDT" duration-ms="2970" status="PASS">
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:19 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:16:21 PDT" duration-ms="2052" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testScipts.CreateUserTest.createuserTC1() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
               </value>
             </param>
             <param index="1">
@@ -67,15 +38,222 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriverAndTest -->
-        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-28T09:20:47 PDT" name="navigateToHome" finished-at="2025-07-28T09:20:52 PDT" duration-ms="4998" status="PASS">
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:21 PDT" name="navigateToHome" finished-at="2025-07-28T16:16:26 PDT" duration-ms="5042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToHome -->
-        <test-method signature="createuserTC1()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-28T09:20:52 PDT" name="createuserTC1" description="Creating User using Valid mandatory field&#039;s values" finished-at="2025-07-28T09:20:56 PDT" duration-ms="3161" status="PASS">
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:26 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:16:29 PDT" duration-ms="3032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createuserTC1 -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-28T09:20:56 PDT" name="tearDownDriver" finished-at="2025-07-28T09:20:56 PDT" duration-ms="379" status="PASS">
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:29 PDT" name="tearDownDriver" finished-at="2025-07-28T16:16:30 PDT" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:30 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:16:31 PDT" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:31 PDT" name="navigateToHome" finished-at="2025-07-28T16:16:36 PDT" duration-ms="5075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:36 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:16:38 PDT" duration-ms="1601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:38 PDT" name="tearDownDriver" finished-at="2025-07-28T16:16:38 PDT" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:38 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:16:39 PDT" duration-ms="803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:39 PDT" name="navigateToHome" finished-at="2025-07-28T16:16:44 PDT" duration-ms="5624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:44 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:16:46 PDT" duration-ms="1621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:46 PDT" name="tearDownDriver" finished-at="2025-07-28T16:16:46 PDT" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:46 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:16:47 PDT" duration-ms="759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:47 PDT" name="navigateToHome" finished-at="2025-07-28T16:16:52 PDT" duration-ms="4808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:52 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:16:54 PDT" duration-ms="1985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:54 PDT" name="tearDownDriver" finished-at="2025-07-28T16:16:56 PDT" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:56 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:16:57 PDT" duration-ms="835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:16:57 PDT" name="navigateToHome" finished-at="2025-07-28T16:17:02 PDT" duration-ms="5278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:02 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:17:04 PDT" duration-ms="1747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@.com.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:04 PDT" name="tearDownDriver" finished-at="2025-07-28T16:17:04 PDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:04 PDT" name="setUpDriverAndTest" finished-at="2025-07-28T16:17:05 PDT" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testInvalidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:05 PDT" name="navigateToHome" finished-at="2025-07-28T16:17:10 PDT" duration-ms="4808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testInvalidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:10 PDT" name="testInvalidEmailValidation" data-provider="invalidEmails" finished-at="2025-07-28T16:17:32 PDT" duration-ms="22255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@5b04476e]" started-at="2025-07-28T16:17:32 PDT" name="tearDownDriver" finished-at="2025-07-28T16:17:33 PDT" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->
