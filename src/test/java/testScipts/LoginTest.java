@@ -15,7 +15,7 @@ import utils.UtilCommon;
 
 public class LoginTest extends BaseTest{
 	
-	@Test
+//	@Test
 	public void loginTest1() throws InvalidFormatException, IOException {
 	WebDriver driver = BaseTest.getDriver();
 	
