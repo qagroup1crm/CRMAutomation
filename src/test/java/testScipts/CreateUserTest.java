@@ -34,11 +34,8 @@ public class CreateUserTest extends BaseTest{
 		WebDriver driver = BaseTest.getDriver();
 		CreateUserPage cu = new CreateUserPage(driver);
 		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
-		Actions actions = new Actions(driver);
-	        actions.moveToElement(cu.adminconsole).perform();
-	        UtilCommon.waitForElementvisible(driver, cu.createuser);
-	        cu.createuser.click();
-	        BaseTest.getTest().info("Create User page displayed successfully");
+		   	cu.createuserform(driver);
+	        BaseTest.getTest().info("Create User form is displayed");
 	        cu.createuser();
 //	        UtilCommon.waitForElementvisible(driver, cu.assertUserName);
 //	        Assert.assertTrue(cu.assertUserName.isDisplayed(), "Username not displayed in table: " + cu.assertUserName);
@@ -46,30 +43,20 @@ public class CreateUserTest extends BaseTest{
 		}
 	
 	
-//	@Test(description = "Invalid Password")
+	@Test(description = "Invalid Password")
 	public void createuserTC2() throws InvalidFormatException, IOException {
 		WebDriver driver = BaseTest.getDriver();
 		CreateUserPage cu = new CreateUserPage(driver);
 		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
 		   cu.createuserform(driver);
-		    BaseTest.getTest().info("Creat User for displayed");
-	        cu.createuser();
-	        BaseTest.getTest().info("Create User form is displayed");
-	        
-		
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.invalidpassword(randomDataGenerator.CreateUser.getinvalidPassword());
+	        BaseTest.getTest().info("Create User form is filled");
+	        String valmessage = cu.validationmessage(driver, cu.password);
+	        Assert.assertTrue(valmessage.contains("6 characters or more"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
 		}
 	
-//	@Test(description = "email id without '@'")
-	public void createuserTC26() throws InvalidFormatException, IOException {
-		WebDriver driver = BaseTest.getDriver();
-		CreateUserPage cu = new CreateUserPage(driver);
-		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
-		   cu.createuserform(driver);
-		   BaseTest.getTest().info("Create User form is displayed");
-	        cu.invalidemail("abc.com");
-	        UtilCommon.waitForElementvisible(driver, cu.emailerrormessage);
-	        Assert.assertTrue(cu.emailerrormessage.isDisplayed(), "Please enter a valid email address");
-	        }
 	
 	@Test(dataProvider = "invalidEmails", dataProviderClass = CreateUserDP.class, description ="TC 26- TC 37")
 	public void testInvalidEmailValidation(String email) throws IOException {
@@ -85,8 +72,90 @@ public class CreateUserTest extends BaseTest{
 
 	    UtilCommon.waitForElementvisible(driver, cu.emailerrormessage);
 	    Assert.assertTrue(cu.emailerrormessage.isDisplayed(), "Please enter a valid email address");
+	    
 	}
 	
+	@Test(description = "Blank User Full name")
+	public void createuserTC07() throws InvalidFormatException, IOException {
+		WebDriver driver = BaseTest.getDriver();
+		CreateUserPage cu = new CreateUserPage(driver);
+		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
+		   cu.createuserform(driver);
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.blankfield();
+	        cu.userfullname.clear();
+	        cu.save.click();
+	        String valmessage = cu.validationmessage(driver, cu.userfullname);
+	        Assert.assertTrue(valmessage.contains("fill out this field"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
+	        
+		}
+	
+	@Test(description = "Blank MobileNumber")
+	public void createuserTCBMobile() throws InvalidFormatException, IOException {
+		WebDriver driver = BaseTest.getDriver();
+		CreateUserPage cu = new CreateUserPage(driver);
+		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
+		   cu.createuserform(driver);
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.blankfield();
+	        cu.mobile.clear();
+	        cu.save.click();
+	        String valmessage = cu.validationmessage(driver, cu.mobile);
+	        Assert.assertTrue(valmessage.contains("fill out this field"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
+	        
+		}
+	
+	
+	@Test(description = "Blank email")
+	public void createuserTCBEmail() throws InvalidFormatException, IOException {
+		WebDriver driver = BaseTest.getDriver();
+		CreateUserPage cu = new CreateUserPage(driver);
+		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
+		   cu.createuserform(driver);
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.blankfield();
+	        cu.email.clear();
+	        cu.save.click();
+	        String valmessage = cu.validationmessage(driver, cu.email);
+	        Assert.assertTrue(valmessage.contains("fill out this field"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
+	        
+		}
+	
+	@Test(description = "Blank username")
+	public void createuserTCBUsername() throws InvalidFormatException, IOException {
+		WebDriver driver = BaseTest.getDriver();
+		CreateUserPage cu = new CreateUserPage(driver);
+		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
+		   cu.createuserform(driver);
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.blankfield();
+	        cu.username.clear();
+	        cu.save.click();
+	        String valmessage = cu.validationmessage(driver, cu.username);
+	        Assert.assertTrue(valmessage.contains("fill out this field"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
+	        
+		}
+	
+	
+	@Test(description = "Blank Password")
+	public void createuserTCBPassword() throws InvalidFormatException, IOException {
+		WebDriver driver = BaseTest.getDriver();
+		CreateUserPage cu = new CreateUserPage(driver);
+		   UtilCommon.waitForElementvisible(driver, cu.adminconsole);
+		   cu.createuserform(driver);
+		   BaseTest.getTest().info("Create User form is displayed");
+	        cu.blankfield();
+	        cu.password.clear();
+	        cu.save.click();
+	        String valmessage = cu.validationmessage(driver, cu.password);
+	        Assert.assertTrue(valmessage.contains("fill out this field"));
+	        BaseTest.getTest().info("Error/Validation message is displayed");
+	        
+		}
 	
 	
 	

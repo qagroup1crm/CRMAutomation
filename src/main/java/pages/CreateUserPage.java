@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.UUID;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -89,6 +90,17 @@ public class CreateUserPage extends Base{
 	       	       
 		}
 	
+	public String  validationmessage(WebDriver driver, WebElement element) throws IOException {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].reportValidity();",element );
+		
+		String validationMessage = (String) js.executeScript("return arguments[0].validationMessage;", element);
+		System.out.println("Validation Message: " + validationMessage);
+		return validationMessage;
+           
+		}
+	
 	public void invalidemail(String emailid) throws IOException {
 		
 		   userfullname.click();
@@ -104,6 +116,37 @@ public class CreateUserPage extends Base{
 	       save.click();
 	            
 		}
+	
+	public void invalidpassword(String pswrd) throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(randomDataGenerator.CreateUser.getEmail());
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(pswrd);
+	       save.click();      
+		}
+	
+	public void blankfield() throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(randomDataGenerator.CreateUser.getEmail());
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
+	           
+		}
+	
 	
 		    
 
