@@ -9,21 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">156</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">52</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testScipts.LoginTest</td><td><a href="#m0">setDriver</a></td><td rowspan="1">1753201596218</td><td rowspan="1">-1753201596218</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testScipts.LoginTest</td><td><a href="#m1">removeDriver</a></td><td rowspan="1">1753201596343</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td><td rowspan="1">1753201596320</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="1">1753201596335</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testScipts.LoginTest</td><td><a href="#m4">loginTest2</a></td><td rowspan="1">1753201596326</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testScipts.CreateUserTest</td><td><a href="#m0">setUpDriverAndTest</a></td><td rowspan="1">1754003616649</td><td rowspan="1">-1754003616649</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testScipts.CreateUserTest</td><td><a href="#m1">flushReport</a></td><td rowspan="1">1754003616938</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">navigateToHome</a></td><td rowspan="1">1754003616659</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">tearDownDriver</a></td><td rowspan="1">1754003616664</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testScipts.CreateUserTest</td><td><a href="#m4">createuserTCBPassword</a></td><td rowspan="1">1754003616661</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testScipts.LoginTest#setDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeTest on method setDriver but has not been marked @Optional or defined
-in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml
+<h2>Default test</h2><h3 id="m0">testScipts.CreateUserTest#setUpDriverAndTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeMethod on method setUpDriverAndTest but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse-1977032660\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -38,20 +46,28 @@ in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsui
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testScipts.LoginTest#removeDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testScipts.LoginTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testScipts.LoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testScipts.LoginTest#loginTest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browserName&apos; is required by BeforeTest on method setDriver but has not been marked @Optional or defined
-in C:\Users\gheva\AppData\Local\Temp\testng-eclipse--1005574867\testng-customsuite.xml
+<h3 id="m1">testScipts.CreateUserTest#flushReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testScipts.CreateUserTest#navigateToHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testScipts.CreateUserTest#tearDownDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testScipts.CreateUserTest#createuserTCBPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeMethod on method setUpDriverAndTest but has not been marked @Optional or defined
+in C:\Users\gheva\AppData\Local\Temp\testng-eclipse-1977032660\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)

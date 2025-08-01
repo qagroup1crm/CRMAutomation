@@ -62,7 +62,7 @@ public class BaseTest {
     public void tearDownDriver() {
         WebDriver driver = getDriver();
         if (driver != null) {
-//            driver.quit();
+            driver.quit();
             logger.info("Driver quit");
         }
         threadLocalDriver.remove();

@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScipts.LoginTest">
+      <class name="testScipts.CreateUserTest">
         <methods>
-          <include name="loginTest2"/>
+          <include name="flushReport"/>
+          <include name="tearDownDriver"/>
           <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="setDriver"/>
-          <include name="removeDriver"/>
+          <include name="createuserTCBPassword"/>
+          <include name="setUpDriverAndTest"/>
+          <include name="navigateToHome"/>
         </methods>
-      </class> <!-- testScipts.LoginTest -->
+      </class> <!-- testScipts.CreateUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

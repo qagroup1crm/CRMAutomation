@@ -1,6 +1,0 @@
-2025-07-31-07:25:20 INFO  BaseTest: getBrowserType: chrome configured
-2025-07-31-07:25:20 INFO  Driver set for test: createuserTC2
-2025-07-31-07:25:20 INFO  ExtentTest created for: createuserTC2
-2025-07-31-07:25:25 INFO  LoginPage: loginToApp: application launched
-2025-07-31-07:25:29 INFO  Driver quit
-2025-07-31-07:25:30 INFO  Extent Report flushed.
