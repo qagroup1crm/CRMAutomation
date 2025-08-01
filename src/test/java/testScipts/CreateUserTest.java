@@ -59,7 +59,7 @@ public class CreateUserTest extends BaseTest{
 	
 	
 	@Test(dataProvider = "invalidEmails", dataProviderClass = CreateUserDP.class, description ="TC 26- TC 37")
-	public void testInvalidEmailValidation(String email) throws IOException {
+	public void testInvalidEmailValidation(String ivemail) throws IOException {
 	    WebDriver driver = BaseTest.getDriver();
 	    CreateUserPage cu = new CreateUserPage(driver);
 
@@ -68,7 +68,7 @@ public class CreateUserTest extends BaseTest{
 
 	    logger.info("Create User form is displayed");
 
-	    cu.invalidemail(email);
+	    cu.invalidemail(ivemail);
 
 	    UtilCommon.waitForElementvisible(driver, cu.emailerrormessage);
 	    Assert.assertTrue(cu.emailerrormessage.isDisplayed(), "Please enter a valid email address");
