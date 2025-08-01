@@ -6,6 +6,15 @@
 	<test name="Chrome browser test">
 		<parameter name="browserName" value="chrome"></parameter>
 	<parameter name="isHeadless" value="false"></parameter>
+	
+<!-- 	<groups>
+		  <run>
+			  <include name="smoke">
+				  
+			  </include>
+		  </run>
+	  </groups>   -->
+	
 		<classes>
 			<class name="testScipts.LoginTest"></class>
 			<class name="testScipts.CreateUserTest"></class>

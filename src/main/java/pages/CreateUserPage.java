@@ -117,6 +117,22 @@ public class CreateUserPage extends Base{
 	            
 		}
 	
+	public void validemail(String emailid) throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(emailid);
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
+	       save.click();
+	            
+		}
+	
 	public void invalidpassword(String pswrd) throws IOException {
 		
 		   userfullname.click();
@@ -146,6 +162,8 @@ public class CreateUserPage extends Base{
 	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
 	           
 		}
+	
+	
 	
 	
 		    

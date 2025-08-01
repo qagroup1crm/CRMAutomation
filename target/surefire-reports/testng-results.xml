@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T08:05:00 PDT" name="TestNgSuite" finished-at="2025-07-31T08:05:11 PDT" duration-ms="10432">
+  <suite started-at="2025-07-31T16:46:05 PDT" name="TestNgSuite" finished-at="2025-07-31T16:46:48 PDT" duration-ms="43124">
     <groups>
     </groups>
-    <test started-at="2025-07-31T08:05:00 PDT" name="Chrome browser test" finished-at="2025-07-31T08:05:11 PDT" duration-ms="10432">
+    <test started-at="2025-07-31T16:46:05 PDT" name="Chrome browser test" finished-at="2025-07-31T16:46:48 PDT" duration-ms="43124">
       <class name="testScipts.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testScipts.LoginTest@73db4768]" started-at="2025-07-31T08:05:00 PDT" name="setup" finished-at="2025-07-31T08:05:00 PDT" duration-ms="317" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testScipts.LoginTest@a8c1f44]" started-at="2025-07-31T16:46:05 PDT" name="setup" finished-at="2025-07-31T16:46:05 PDT" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:testScipts.LoginTest@73db4768]" started-at="2025-07-31T08:05:12 PDT" name="flushReport" finished-at="2025-07-31T08:05:12 PDT" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testScipts.LoginTest@a8c1f44]" started-at="2025-07-31T16:46:49 PDT" name="flushReport" finished-at="2025-07-31T16:46:49 PDT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
       </class> <!-- testScipts.LoginTest -->
       <class name="testScipts.CreateUserTest">
-        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:00 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T08:05:03 PDT" duration-ms="2430" status="PASS">
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:05 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T16:46:06 PDT" duration-ms="1217" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testScipts.CreateUserTest.createuserTCBUsername() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
+                <![CDATA[public void testScipts.CreateUserTest.testValidEmailValidation(java.lang.String) throws java.io.IOException]]>
               </value>
             </param>
             <param index="1">
@@ -38,81 +38,182 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriverAndTest -->
-        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:00 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T08:05:03 PDT" duration-ms="2428" status="PASS">
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:06 PDT" name="navigateToHome" finished-at="2025-07-31T16:46:12 PDT" duration-ms="5258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testValidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:12 PDT" name="testValidEmailValidation" description="TC 22, 25, 38" data-provider="validEmails" finished-at="2025-07-31T16:46:14 PDT" duration-ms="2746" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testScipts.CreateUserTest.createuserTCBEmail() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
+                <![CDATA[abc.xyz@gmail.co.in]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpDriverAndTest -->
-        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:00 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T08:05:03 PDT" duration-ms="2429" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testScipts.CreateUserTest.createuserTCBPassword() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriverAndTest -->
-        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:03 PDT" name="navigateToHome" finished-at="2025-07-31T08:05:08 PDT" duration-ms="5396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToHome -->
-        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:03 PDT" name="navigateToHome" finished-at="2025-07-31T08:05:08 PDT" duration-ms="5430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToHome -->
-        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:03 PDT" name="navigateToHome" finished-at="2025-07-31T08:05:07 PDT" duration-ms="4565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToHome -->
-        <test-method signature="createuserTCBUsername()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:07 PDT" name="createuserTCBUsername" description="Blank username" finished-at="2025-07-31T08:05:10 PDT" duration-ms="2824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createuserTCBUsername -->
-        <test-method signature="createuserTCBPassword()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:08 PDT" name="createuserTCBPassword" description="Blank Password" finished-at="2025-07-31T08:05:10 PDT" duration-ms="2179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createuserTCBPassword -->
-        <test-method signature="createuserTCBEmail()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:08 PDT" name="createuserTCBEmail" description="Blank email" finished-at="2025-07-31T08:05:10 PDT" duration-ms="2183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createuserTCBEmail -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:11 PDT" name="tearDownDriver" finished-at="2025-07-31T08:05:11 PDT" duration-ms="1" status="PASS">
+        </test-method> <!-- testValidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:15 PDT" name="tearDownDriver" finished-at="2025-07-31T16:46:15 PDT" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:11 PDT" name="tearDownDriver" finished-at="2025-07-31T08:05:11 PDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:15 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T16:46:16 PDT" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testValidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:16 PDT" name="navigateToHome" finished-at="2025-07-31T16:46:21 PDT" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testValidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:21 PDT" name="testValidEmailValidation" description="TC 22, 25, 38" data-provider="validEmails" finished-at="2025-07-31T16:46:22 PDT" duration-ms="1533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc.xyz@gmail.co.in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:23 PDT" name="tearDownDriver" finished-at="2025-07-31T16:46:23 PDT" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@1623134f]" started-at="2025-07-31T08:05:11 PDT" name="tearDownDriver" finished-at="2025-07-31T08:05:11 PDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:23 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T16:46:24 PDT" duration-ms="765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testValidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:24 PDT" name="navigateToHome" finished-at="2025-07-31T16:46:29 PDT" duration-ms="4993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testValidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:29 PDT" name="testValidEmailValidation" description="TC 22, 25, 38" data-provider="validEmails" finished-at="2025-07-31T16:46:30 PDT" duration-ms="1665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABC@GMAIL.COM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:30 PDT" name="tearDownDriver" finished-at="2025-07-31T16:46:31 PDT" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:31 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T16:46:31 PDT" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testValidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:31 PDT" name="navigateToHome" finished-at="2025-07-31T16:46:37 PDT" duration-ms="6016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testValidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:37 PDT" name="testValidEmailValidation" description="TC 22, 25, 38" data-provider="validEmails" finished-at="2025-07-31T16:46:39 PDT" duration-ms="1573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc.xyz@gmail.co.in]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:39 PDT" name="tearDownDriver" finished-at="2025-07-31T16:46:39 PDT" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpDriverAndTest(java.lang.reflect.Method,java.lang.String,boolean)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:39 PDT" name="setUpDriverAndTest" finished-at="2025-07-31T16:46:40 PDT" duration-ms="767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testScipts.CreateUserTest.testValidEmailValidation(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriverAndTest -->
+        <test-method is-config="true" signature="navigateToHome()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:40 PDT" name="navigateToHome" finished-at="2025-07-31T16:46:46 PDT" duration-ms="6190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHome -->
+        <test-method signature="testValidEmailValidation(java.lang.String)[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:46 PDT" name="testValidEmailValidation" description="TC 22, 25, 38" data-provider="validEmails" finished-at="2025-07-31T16:46:48 PDT" duration-ms="1680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc123@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidEmailValidation -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testScipts.CreateUserTest@485a3466]" started-at="2025-07-31T16:46:48 PDT" name="tearDownDriver" finished-at="2025-07-31T16:46:48 PDT" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->

@@ -22,5 +22,16 @@ public class CreateUserDP {
 	    };
 	}
 	
+	@DataProvider(name = "validEmails")
+	public Object[][] validEmails() {
+	    return new Object[][] {
+	        {"abc.xyz@gmail.co.in"},
+	        {"abc.xyz@gmail.co.in"},
+	        {"ABC@GMAIL.COM"},
+	        {"abc.xyz@gmail.co.in"},
+	        {"abc123@gmail.com"},
+	    };
+	}
+	
 
 }
