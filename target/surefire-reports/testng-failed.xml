@@ -10,8 +10,8 @@
           <include name="flushReport"/>
           <include name="tearDownDriver"/>
           <include name="setup"/>
+          <include name="testInvalidEmailValidation" invocation-numbers="5"/>
           <include name="setUpDriverAndTest"/>
-          <include name="createuserTCBMobile"/>
           <include name="navigateToHome"/>
         </methods>
       </class> <!-- testScipts.CreateUserTest -->

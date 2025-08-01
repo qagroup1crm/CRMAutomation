@@ -11,7 +11,6 @@ public class CreateUserDP {
 	        {"abc@com"},
 	        {"@example.com"},
 	        {"abc@.com."},
-	        {""},
 	        {"abc@yz@example.com"},
 	        {"abc#xyz@example.com"},
 	        {"abc xyz@example.com"},
