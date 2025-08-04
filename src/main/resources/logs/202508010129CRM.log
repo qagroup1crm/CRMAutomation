@@ -1,0 +1,6 @@
+2025-08-01-01:29:15 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-01:29:15 INFO  Driver set for test: verifyCategoryMustBeSelected
+2025-08-01-01:29:15 INFO  ExtentTest created for: verifyCategoryMustBeSelected
+2025-08-01-01:29:20 INFO  LoginPage: loginToApp: application launched
+2025-08-01-01:29:22 INFO  Driver quit
+2025-08-01-01:29:23 INFO  Extent Report flushed.

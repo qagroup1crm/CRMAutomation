@@ -1,0 +1,14 @@
+2025-08-01-08:55:41 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-08:55:41 INFO  Driver set for test: verifyDefaultQuantityIsZeroTC_06
+2025-08-01-08:55:41 INFO  ExtentTest created for: verifyDefaultQuantityIsZeroTC_06
+2025-08-01-08:55:41 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-08:55:41 INFO  Driver set for test: verifyDefaultPricePerUnit
+2025-08-01-08:55:41 INFO  ExtentTest created for: verifyDefaultPricePerUnit
+2025-08-01-08:55:41 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-08:55:41 INFO  Driver set for test: verifyVendorMustBeSelectedTC06
+2025-08-01-08:55:41 INFO  ExtentTest created for: verifyVendorMustBeSelectedTC06
+2025-08-01-08:55:52 INFO  LoginPage: loginToApp: application launched
+2025-08-01-08:55:53 INFO  LoginPage: loginToApp: application launched
+2025-08-01-08:55:54 INFO  LoginPage: loginToApp: application launched
+2025-08-01-08:56:04 INFO  Driver quit
+2025-08-01-08:56:29 INFO  Driver quit

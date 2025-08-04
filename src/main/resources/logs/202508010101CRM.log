@@ -1,0 +1,6 @@
+2025-08-01-01:01:29 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-01:01:29 INFO  Driver set for test: verifyProductNameCannotBeBlank
+2025-08-01-01:01:29 INFO  ExtentTest created for: verifyProductNameCannotBeBlank
+2025-08-01-01:01:34 INFO  LoginPage: loginToApp: application launched
+2025-08-01-01:01:56 INFO  Driver quit
+2025-08-01-01:01:57 INFO  Extent Report flushed.

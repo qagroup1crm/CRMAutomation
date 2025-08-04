@@ -4,12 +4,16 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.UUID;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import randomDataGenerator.CreateUser;
+
+import utils.UtilCommon;
 
 
 
@@ -54,10 +58,21 @@ public class CreateUserPage extends Base{
 	@FindBy(xpath = "//button[text()='Create User']")
 	public WebElement save;
 	
+	@FindBy(xpath = "//table//tr/td[3][text()=username]")
+	public WebElement assertUserName;
+	
 	@FindBy(xpath = "//div[contains(@class, 'error-message') and contains(text(), 'valid email')]")
 	public WebElement emailerrormessage;
 	
 	
+	public void createuserform(WebDriver driver) throws IOException {
+		
+		Actions actions = new Actions(driver);
+        actions.moveToElement(adminconsole).perform();
+        UtilCommon.waitForElementvisible(driver, createuser);
+        createuser.click();
+       	       	       
+		}
 	
 	public void createuser() throws IOException {
 		
@@ -74,6 +89,65 @@ public class CreateUserPage extends Base{
 	       save.click();
 	       	       
 		}
+	
+	public String  validationmessage(WebDriver driver, WebElement element) throws IOException {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].reportValidity();",element );
+		
+		String validationMessage = (String) js.executeScript("return arguments[0].validationMessage;", element);
+		System.out.println("Validation Message: " + validationMessage);
+		return validationMessage;
+           
+		}
+	
+	public void invalidemail(String emailid) throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(emailid);
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
+	       save.click();
+	            
+		}
+	
+	public void invalidpassword(String pswrd) throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(randomDataGenerator.CreateUser.getEmail());
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(pswrd);
+	       save.click();      
+		}
+	
+	public void blankfield() throws IOException {
+		
+		   userfullname.click();
+	       userfullname.sendKeys(randomDataGenerator.CreateUser.getFullName());
+	       mobile.click();
+	       mobile.sendKeys(randomDataGenerator.CreateUser.getMobileNumber());
+	       email.click();
+	       email.sendKeys(randomDataGenerator.CreateUser.getEmail());
+	       username.click();
+	       username.sendKeys(randomDataGenerator.CreateUser.getUsername());
+	       password.click();
+	       password.sendKeys(randomDataGenerator.CreateUser.getPassword());
+	           
+		}
+	
+	
 		    
 
 }
