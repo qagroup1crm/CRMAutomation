@@ -1,0 +1,6 @@
+2025-08-01-07:57:15 INFO  BaseTest: getBrowserType: chrome configured
+2025-08-01-07:57:15 INFO  Driver set for test: verifyDefaultQuantityIsZeroTC_06
+2025-08-01-07:57:15 INFO  ExtentTest created for: verifyDefaultQuantityIsZeroTC_06
+2025-08-01-07:57:20 INFO  LoginPage: loginToApp: application launched
+2025-08-01-07:57:21 INFO  Driver quit
+2025-08-01-07:57:21 INFO  Extent Report flushed.
